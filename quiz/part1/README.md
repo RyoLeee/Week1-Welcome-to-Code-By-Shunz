@@ -17,7 +17,7 @@ yak Buka aja W3school dan kerjakan soal soal berikut
 // Tugas Anda adalah untuk membuat program yang mengecek isi variabel 
 // peran serta mengeluarkan respon sesuai isi variabel tersebut.
 //ada 4 jenis respons sesuai dengan 3 jenis peran yaitu
-//halo Ksatria ${nama} , kamu dapat menyerang dengan senjatamu!
+// Ksatrhaloia ${nama} , kamu dapat menyerang dengan senjatamu!
 //halo Tabib ${nama} , kamu akan membantu temanmu yang terluka
 //halo Penyihir ${nama} , ciptakan keajaiban yang membantu kemenanganmu!
 //tapi kayaknya kamu jadi bot aja ya, peran yang kamu pilih ga ada
@@ -25,13 +25,24 @@ yak Buka aja W3school dan kerjakan soal soal berikut
 //mudah dalam memasukan variabel ke dalam string
 //tapi tanpa backtick juga ga masalah sih yg penting output sesuai
 
-// algoritma
-//isi algoritma mu disini (AWAS KALO GA DI ISI!!!!)
+fuction poxytiaGame() {
+    const user_name = toLowerCase(prompt(`What's tour name?`));
+    const user_input = toLowerCase(prompt(`Wich one do you like: Ksatria, Tabib, Penyihir`));
+    
+    if (user_input === `ksatria`) {
+        return `Hola Ksatria ${user_input}, kamu dapat menyerang dengan senjatamu`;
+    } else if (user_input === `tabib`) {
+        return `halo Tabib ${user_name}, you will help your friends`;
+    } else if (user_input === `penyihir`) {
+        return `halo ${user_name}, ciptakan keajaiban yang akan membantu kemenanganmu`;
+    } else {
+        return `but I think kamu jadi bot aja ya, peran kamu pilih nggak ada`
+    };
+
+}
 
 
-let nama = "", peran = "";
-
-//code disini gunakan console.log untuk outputnya
+console.log(proxytiaGame());
 
 ```
 
@@ -54,7 +65,19 @@ let tanggal = 12; // assign nilai variabel tanggal disini! (dengan angka antara 
 let bulan = "februari"; // assign nilai variabel bulan disini! (dengan angka antara 1 - 12)
 let tahun = 2001; // assign nilai variabel tahun disini! (dengan angka antara 1900 - 2200)
 
-//code switch case kamu disini
+switch (bulan) {
+ case `january`:
+    return 1
+    break;
+
+ case `february`: 
+    return 2
+    break;
+
+ case `maret`:
+    return 3
+    break;
+}
 ```
 
 ---
